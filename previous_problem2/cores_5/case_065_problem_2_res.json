@@ -1,0 +1,209 @@
+{
+  "scene": "B",
+  "makespan": 11607,
+  "num_cores": 5,
+  "bandwidth_bytes_per_cycle": 60,
+  "capacity_bytes": {
+    "L1": 524288,
+    "UB": 131072
+  },
+  "memory_peak_by_core": {
+    "0": {
+      "L1": 32256,
+      "UB": 24584
+    },
+    "1": {
+      "L1": 32256,
+      "UB": 24580
+    },
+    "2": {
+      "L1": 23040,
+      "UB": 24580
+    },
+    "3": {
+      "L1": 32256,
+      "UB": 24580
+    },
+    "4": {
+      "L1": 32256,
+      "UB": 14406
+    }
+  },
+  "step3_by_core": {
+    "0": {
+      "local_makespan": 12711,
+      "memory_dependency_count": 1,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 37,
+        "PIPE_MTE3": 15,
+        "PIPE_M": 13,
+        "PIPE_V": 142
+      }
+    },
+    "1": {
+      "local_makespan": 12682,
+      "memory_dependency_count": 75,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 30,
+        "PIPE_MTE3": 12,
+        "PIPE_M": 13,
+        "PIPE_V": 130
+      }
+    },
+    "2": {
+      "local_makespan": 10344,
+      "memory_dependency_count": 39,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 33,
+        "PIPE_MTE3": 10,
+        "PIPE_M": 13,
+        "PIPE_V": 124
+      }
+    },
+    "3": {
+      "local_makespan": 12398,
+      "memory_dependency_count": 13,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 33,
+        "PIPE_MTE3": 10,
+        "PIPE_M": 14,
+        "PIPE_V": 119
+      }
+    },
+    "4": {
+      "local_makespan": 11596,
+      "memory_dependency_count": 0,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 34,
+        "PIPE_MTE3": 10,
+        "PIPE_M": 14,
+        "PIPE_V": 122
+      }
+    }
+  },
+  "cross_core_copy_delay_cycles": 500,
+  "cross_task_traffic": 0,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 316202,
+    "scheduled_copy_bytes": 371786,
+    "added_copy_bytes": 55584,
+    "partition_added_copy_bytes": 55584,
+    "spill_added_copy_bytes": 0
+  },
+  "task_count": 5,
+  "task_dependencies": [],
+  "cross_core_transfers": [],
+  "per_core_timeline": [
+    {
+      "core_id": 0,
+      "tasks": [
+        {
+          "task_id": 0,
+          "subgraph_ids": [
+            1
+          ],
+          "start": 0,
+          "end": 11607,
+          "duration": 11607
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 1,
+          "start": 0,
+          "end": 11607,
+          "duration": 11607
+        }
+      ]
+    },
+    {
+      "core_id": 1,
+      "tasks": [
+        {
+          "task_id": 1,
+          "subgraph_ids": [
+            3
+          ],
+          "start": 0,
+          "end": 11329,
+          "duration": 11329
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 3,
+          "start": 0,
+          "end": 11329,
+          "duration": 11329
+        }
+      ]
+    },
+    {
+      "core_id": 2,
+      "tasks": [
+        {
+          "task_id": 2,
+          "subgraph_ids": [
+            0
+          ],
+          "start": 0,
+          "end": 9431,
+          "duration": 9431
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 0,
+          "start": 0,
+          "end": 9431,
+          "duration": 9431
+        }
+      ]
+    },
+    {
+      "core_id": 3,
+      "tasks": [
+        {
+          "task_id": 3,
+          "subgraph_ids": [
+            2
+          ],
+          "start": 0,
+          "end": 11363,
+          "duration": 11363
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 2,
+          "start": 0,
+          "end": 11363,
+          "duration": 11363
+        }
+      ]
+    },
+    {
+      "core_id": 4,
+      "tasks": [
+        {
+          "task_id": 4,
+          "subgraph_ids": [
+            4
+          ],
+          "start": 0,
+          "end": 10544,
+          "duration": 10544
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 4,
+          "start": 0,
+          "end": 10544,
+          "duration": 10544
+        }
+      ]
+    }
+  ],
+  "result_detail": "official metrics, task/subgraph intervals and cross-core transfers; --trace retains operations"
+}

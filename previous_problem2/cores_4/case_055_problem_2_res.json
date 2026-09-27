@@ -1,0 +1,313 @@
+{
+  "scene": "B",
+  "makespan": 31297,
+  "num_cores": 4,
+  "bandwidth_bytes_per_cycle": 60,
+  "capacity_bytes": {
+    "L1": 524288,
+    "UB": 131072
+  },
+  "memory_peak_by_core": {
+    "0": {
+      "L1": 19968,
+      "UB": 36868
+    },
+    "1": {
+      "L1": 47616,
+      "UB": 36868
+    },
+    "2": {
+      "L1": 47616,
+      "UB": 36868
+    },
+    "3": {
+      "L1": 40960,
+      "UB": 36868
+    }
+  },
+  "step3_by_core": {
+    "0": {
+      "local_makespan": 33961,
+      "memory_dependency_count": 523,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 42,
+        "PIPE_MTE3": 20,
+        "PIPE_M": 27,
+        "PIPE_V": 255
+      }
+    },
+    "1": {
+      "local_makespan": 36332,
+      "memory_dependency_count": 336,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 41,
+        "PIPE_MTE3": 12,
+        "PIPE_M": 22,
+        "PIPE_V": 196
+      }
+    },
+    "2": {
+      "local_makespan": 32528,
+      "memory_dependency_count": 621,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 45,
+        "PIPE_MTE3": 15,
+        "PIPE_M": 10,
+        "PIPE_V": 316
+      }
+    },
+    "3": {
+      "local_makespan": 33708,
+      "memory_dependency_count": 594,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 55,
+        "PIPE_MTE3": 12,
+        "PIPE_M": 32,
+        "PIPE_V": 378
+      }
+    }
+  },
+  "cross_core_copy_delay_cycles": 500,
+  "cross_task_traffic": 0,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 625810,
+    "scheduled_copy_bytes": 741522,
+    "added_copy_bytes": 115712,
+    "partition_added_copy_bytes": 115712,
+    "spill_added_copy_bytes": 0
+  },
+  "task_count": 4,
+  "task_dependencies": [],
+  "cross_core_transfers": [],
+  "per_core_timeline": [
+    {
+      "core_id": 0,
+      "tasks": [
+        {
+          "task_id": 0,
+          "subgraph_ids": [
+            6,
+            8,
+            12,
+            7,
+            16
+          ],
+          "start": 0,
+          "end": 31297,
+          "duration": 31297
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 6,
+          "start": 0,
+          "end": 14335,
+          "duration": 14335
+        },
+        {
+          "subgraph_id": 8,
+          "start": 2244,
+          "end": 19499,
+          "duration": 17255
+        },
+        {
+          "subgraph_id": 12,
+          "start": 16267,
+          "end": 24637,
+          "duration": 8370
+        },
+        {
+          "subgraph_id": 7,
+          "start": 21431,
+          "end": 29723,
+          "duration": 8292
+        },
+        {
+          "subgraph_id": 16,
+          "start": 23409,
+          "end": 31297,
+          "duration": 7888
+        }
+      ]
+    },
+    {
+      "core_id": 1,
+      "tasks": [
+        {
+          "task_id": 1,
+          "subgraph_ids": [
+            19,
+            11,
+            4,
+            5,
+            18,
+            13,
+            15
+          ],
+          "start": 0,
+          "end": 26968,
+          "duration": 26968
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 19,
+          "start": 0,
+          "end": 9706,
+          "duration": 9706
+        },
+        {
+          "subgraph_id": 11,
+          "start": 6799,
+          "end": 14829,
+          "duration": 8030
+        },
+        {
+          "subgraph_id": 4,
+          "start": 8503,
+          "end": 15263,
+          "duration": 6760
+        },
+        {
+          "subgraph_id": 5,
+          "start": 9601,
+          "end": 18014,
+          "duration": 8413
+        },
+        {
+          "subgraph_id": 18,
+          "start": 10151,
+          "end": 21678,
+          "duration": 11527
+        },
+        {
+          "subgraph_id": 13,
+          "start": 11319,
+          "end": 24256,
+          "duration": 12937
+        },
+        {
+          "subgraph_id": 15,
+          "start": 12042,
+          "end": 26968,
+          "duration": 14926
+        }
+      ]
+    },
+    {
+      "core_id": 2,
+      "tasks": [
+        {
+          "task_id": 2,
+          "subgraph_ids": [
+            1,
+            10,
+            22,
+            14,
+            17
+          ],
+          "start": 0,
+          "end": 27105,
+          "duration": 27105
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 1,
+          "start": 0,
+          "end": 12461,
+          "duration": 12461
+        },
+        {
+          "subgraph_id": 10,
+          "start": 3898,
+          "end": 17703,
+          "duration": 13805
+        },
+        {
+          "subgraph_id": 22,
+          "start": 8363,
+          "end": 22806,
+          "duration": 14443
+        },
+        {
+          "subgraph_id": 14,
+          "start": 9342,
+          "end": 24406,
+          "duration": 15064
+        },
+        {
+          "subgraph_id": 17,
+          "start": 10784,
+          "end": 27105,
+          "duration": 16321
+        }
+      ]
+    },
+    {
+      "core_id": 3,
+      "tasks": [
+        {
+          "task_id": 3,
+          "subgraph_ids": [
+            21,
+            9,
+            0,
+            2,
+            3,
+            23,
+            20
+          ],
+          "start": 0,
+          "end": 24259,
+          "duration": 24259
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 21,
+          "start": 0,
+          "end": 6716,
+          "duration": 6716
+        },
+        {
+          "subgraph_id": 9,
+          "start": 2230,
+          "end": 11894,
+          "duration": 9664
+        },
+        {
+          "subgraph_id": 0,
+          "start": 4606,
+          "end": 12340,
+          "duration": 7734
+        },
+        {
+          "subgraph_id": 2,
+          "start": 5154,
+          "end": 13555,
+          "duration": 8401
+        },
+        {
+          "subgraph_id": 3,
+          "start": 5428,
+          "end": 17675,
+          "duration": 12247
+        },
+        {
+          "subgraph_id": 23,
+          "start": 5702,
+          "end": 21776,
+          "duration": 16074
+        },
+        {
+          "subgraph_id": 20,
+          "start": 6285,
+          "end": 24259,
+          "duration": 17974
+        }
+      ]
+    }
+  ],
+  "result_detail": "official metrics, task/subgraph intervals and cross-core transfers; --trace retains operations"
+}

@@ -1,0 +1,137 @@
+{
+  "scene": "B",
+  "makespan": 574653,
+  "num_cores": 3,
+  "bandwidth_bytes_per_cycle": 60,
+  "capacity_bytes": {
+    "L1": 524288,
+    "UB": 131072
+  },
+  "memory_peak_by_core": {
+    "0": {
+      "L1": 524288,
+      "UB": 32776
+    },
+    "1": {
+      "L1": 524288,
+      "UB": 9216
+    },
+    "2": {
+      "L1": 524288,
+      "UB": 9216
+    }
+  },
+  "step3_by_core": {
+    "0": {
+      "local_makespan": 645870,
+      "memory_dependency_count": 5133,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 607,
+        "PIPE_MTE3": 37,
+        "PIPE_M": 688,
+        "PIPE_V": 1095
+      }
+    },
+    "1": {
+      "local_makespan": 590448,
+      "memory_dependency_count": 3977,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 657,
+        "PIPE_MTE3": 34,
+        "PIPE_M": 710,
+        "PIPE_V": 800
+      }
+    },
+    "2": {
+      "local_makespan": 584897,
+      "memory_dependency_count": 3999,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 600,
+        "PIPE_MTE3": 33,
+        "PIPE_M": 685,
+        "PIPE_V": 755
+      }
+    }
+  },
+  "cross_core_copy_delay_cycles": 500,
+  "cross_task_traffic": 0,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 2388964,
+    "scheduled_copy_bytes": 8265988,
+    "added_copy_bytes": 5877024,
+    "partition_added_copy_bytes": 2875680,
+    "spill_added_copy_bytes": 3001344
+  },
+  "task_count": 3,
+  "task_dependencies": [],
+  "cross_core_transfers": [],
+  "per_core_timeline": [
+    {
+      "core_id": 0,
+      "tasks": [
+        {
+          "task_id": 0,
+          "subgraph_ids": [
+            0
+          ],
+          "start": 0,
+          "end": 574653,
+          "duration": 574653
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 0,
+          "start": 0,
+          "end": 574653,
+          "duration": 574653
+        }
+      ]
+    },
+    {
+      "core_id": 1,
+      "tasks": [
+        {
+          "task_id": 1,
+          "subgraph_ids": [
+            1
+          ],
+          "start": 0,
+          "end": 538198,
+          "duration": 538198
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 1,
+          "start": 0,
+          "end": 538198,
+          "duration": 538198
+        }
+      ]
+    },
+    {
+      "core_id": 2,
+      "tasks": [
+        {
+          "task_id": 2,
+          "subgraph_ids": [
+            2
+          ],
+          "start": 0,
+          "end": 543609,
+          "duration": 543609
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 2,
+          "start": 0,
+          "end": 543609,
+          "duration": 543609
+        }
+      ]
+    }
+  ],
+  "result_detail": "official metrics, task/subgraph intervals and cross-core transfers; --trace retains operations"
+}

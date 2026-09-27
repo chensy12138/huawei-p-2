@@ -1,0 +1,101 @@
+{
+  "scene": "B",
+  "makespan": 144027,
+  "num_cores": 2,
+  "bandwidth_bytes_per_cycle": 60,
+  "capacity_bytes": {
+    "L1": 524288,
+    "UB": 131072
+  },
+  "memory_peak_by_core": {
+    "0": {
+      "L1": 245760,
+      "UB": 32776
+    },
+    "1": {
+      "L1": 44288,
+      "UB": 90112
+    }
+  },
+  "step3_by_core": {
+    "0": {
+      "local_makespan": 117011,
+      "memory_dependency_count": 930,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 74,
+        "PIPE_MTE3": 11,
+        "PIPE_M": 51,
+        "PIPE_V": 499
+      }
+    },
+    "1": {
+      "local_makespan": 181336,
+      "memory_dependency_count": 6469,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 198,
+        "PIPE_MTE3": 21,
+        "PIPE_M": 520,
+        "PIPE_V": 2013
+      }
+    }
+  },
+  "cross_core_copy_delay_cycles": 500,
+  "cross_task_traffic": 0,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 911238,
+    "scheduled_copy_bytes": 923526,
+    "added_copy_bytes": 12288,
+    "partition_added_copy_bytes": 12288,
+    "spill_added_copy_bytes": 0
+  },
+  "task_count": 2,
+  "task_dependencies": [],
+  "cross_core_transfers": [],
+  "per_core_timeline": [
+    {
+      "core_id": 0,
+      "tasks": [
+        {
+          "task_id": 0,
+          "subgraph_ids": [
+            0
+          ],
+          "start": 0,
+          "end": 103339,
+          "duration": 103339
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 0,
+          "start": 0,
+          "end": 103339,
+          "duration": 103339
+        }
+      ]
+    },
+    {
+      "core_id": 1,
+      "tasks": [
+        {
+          "task_id": 1,
+          "subgraph_ids": [
+            1
+          ],
+          "start": 0,
+          "end": 144027,
+          "duration": 144027
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 1,
+          "start": 0,
+          "end": 144027,
+          "duration": 144027
+        }
+      ]
+    }
+  ],
+  "result_detail": "official metrics, task/subgraph intervals and cross-core transfers; --trace retains operations"
+}

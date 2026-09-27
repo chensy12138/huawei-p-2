@@ -1,0 +1,1525 @@
+{
+  "scene": "B",
+  "makespan": 1950363,
+  "num_cores": 3,
+  "bandwidth_bytes_per_cycle": 60,
+  "capacity_bytes": {
+    "L1": 524288,
+    "UB": 131072
+  },
+  "memory_peak_by_core": {
+    "0": {
+      "L1": 524288,
+      "UB": 0
+    },
+    "1": {
+      "L1": 524288,
+      "UB": 0
+    },
+    "2": {
+      "L1": 524288,
+      "UB": 0
+    }
+  },
+  "step3_by_core": {
+    "0": {
+      "local_makespan": 1772456,
+      "memory_dependency_count": 18287,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 1739,
+        "PIPE_MTE3": 142,
+        "PIPE_M": 2477,
+        "PIPE_V": 3664
+      }
+    },
+    "1": {
+      "local_makespan": 1765142,
+      "memory_dependency_count": 18466,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 1635,
+        "PIPE_MTE3": 140,
+        "PIPE_M": 2453,
+        "PIPE_V": 3633
+      }
+    },
+    "2": {
+      "local_makespan": 1570976,
+      "memory_dependency_count": 16188,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 1309,
+        "PIPE_MTE3": 106,
+        "PIPE_M": 2170,
+        "PIPE_V": 3211
+      }
+    }
+  },
+  "cross_core_copy_delay_cycles": 500,
+  "cross_task_traffic": 236032,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 3256928,
+    "scheduled_copy_bytes": 70299136,
+    "added_copy_bytes": 67042208,
+    "partition_added_copy_bytes": 2332864,
+    "spill_added_copy_bytes": 64709344
+  },
+  "task_count": 3,
+  "task_dependencies": [
+    {
+      "tensor_id": 1000000869,
+      "size": 8192,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018461,
+      "target_copy_in_id": 1000018462
+    },
+    {
+      "tensor_id": 1000000876,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018464,
+      "target_copy_in_id": 1000018465
+    },
+    {
+      "tensor_id": 1000000878,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018467,
+      "target_copy_in_id": 1000018468
+    },
+    {
+      "tensor_id": 1000001625,
+      "size": 8192,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018494,
+      "target_copy_in_id": 1000018495
+    },
+    {
+      "tensor_id": 1000001637,
+      "size": 4096,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018497,
+      "target_copy_in_id": 1000018498
+    },
+    {
+      "tensor_id": 1000001649,
+      "size": 2048,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018500,
+      "target_copy_in_id": 1000018501
+    },
+    {
+      "tensor_id": 1000001656,
+      "size": 1024,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018503,
+      "target_copy_in_id": 1000018504
+    },
+    {
+      "tensor_id": 1000001658,
+      "size": 1024,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018506,
+      "target_copy_in_id": 1000018507
+    },
+    {
+      "tensor_id": 1000002381,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000018533,
+      "target_copy_in_id": 1000018534
+    },
+    {
+      "tensor_id": 1000002393,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000018536,
+      "target_copy_in_id": 1000018537
+    },
+    {
+      "tensor_id": 1000002405,
+      "size": 2048,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000018539,
+      "target_copy_in_id": 1000018540
+    },
+    {
+      "tensor_id": 1000002417,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000018542,
+      "target_copy_in_id": 1000018543
+    },
+    {
+      "tensor_id": 1000002439,
+      "size": 512,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000018545,
+      "target_copy_in_id": 1000018546
+    },
+    {
+      "tensor_id": 1000004775,
+      "size": 8192,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018624,
+      "target_copy_in_id": 1000018625
+    },
+    {
+      "tensor_id": 1000004782,
+      "size": 4096,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018627,
+      "target_copy_in_id": 1000018628
+    },
+    {
+      "tensor_id": 1000004784,
+      "size": 4096,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018630,
+      "target_copy_in_id": 1000018631
+    },
+    {
+      "tensor_id": 1000005531,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018657,
+      "target_copy_in_id": 1000018658
+    },
+    {
+      "tensor_id": 1000005543,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018660,
+      "target_copy_in_id": 1000018661
+    },
+    {
+      "tensor_id": 1000005555,
+      "size": 2048,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018663,
+      "target_copy_in_id": 1000018664
+    },
+    {
+      "tensor_id": 1000005562,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018666,
+      "target_copy_in_id": 1000018667
+    },
+    {
+      "tensor_id": 1000005564,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018669,
+      "target_copy_in_id": 1000018670
+    },
+    {
+      "tensor_id": 1000006287,
+      "size": 8192,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000018696,
+      "target_copy_in_id": 1000018697
+    },
+    {
+      "tensor_id": 1000006299,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000018699,
+      "target_copy_in_id": 1000018700
+    },
+    {
+      "tensor_id": 1000006311,
+      "size": 2048,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000018702,
+      "target_copy_in_id": 1000018703
+    },
+    {
+      "tensor_id": 1000006323,
+      "size": 1024,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000018705,
+      "target_copy_in_id": 1000018706
+    },
+    {
+      "tensor_id": 1000006345,
+      "size": 512,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000018708,
+      "target_copy_in_id": 1000018709
+    },
+    {
+      "tensor_id": 1000007043,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018735,
+      "target_copy_in_id": 1000018736
+    },
+    {
+      "tensor_id": 1000007132,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018738,
+      "target_copy_in_id": 1000018739
+    },
+    {
+      "tensor_id": 1000008681,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018793,
+      "target_copy_in_id": 1000018794
+    },
+    {
+      "tensor_id": 1000008688,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018796,
+      "target_copy_in_id": 1000018797
+    },
+    {
+      "tensor_id": 1000008690,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018799,
+      "target_copy_in_id": 1000018800
+    },
+    {
+      "tensor_id": 1000009437,
+      "size": 8192,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018826,
+      "target_copy_in_id": 1000018827
+    },
+    {
+      "tensor_id": 1000009449,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018829,
+      "target_copy_in_id": 1000018830
+    },
+    {
+      "tensor_id": 1000009461,
+      "size": 2048,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018832,
+      "target_copy_in_id": 1000018833
+    },
+    {
+      "tensor_id": 1000009468,
+      "size": 1024,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018835,
+      "target_copy_in_id": 1000018836
+    },
+    {
+      "tensor_id": 1000009470,
+      "size": 1024,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018838,
+      "target_copy_in_id": 1000018839
+    },
+    {
+      "tensor_id": 1000010949,
+      "size": 8192,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018889,
+      "target_copy_in_id": 1000018890
+    },
+    {
+      "tensor_id": 1000011038,
+      "size": 4096,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018892,
+      "target_copy_in_id": 1000018893
+    },
+    {
+      "tensor_id": 1000012587,
+      "size": 8192,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018947,
+      "target_copy_in_id": 1000018948
+    },
+    {
+      "tensor_id": 1000012594,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018950,
+      "target_copy_in_id": 1000018951
+    },
+    {
+      "tensor_id": 1000012596,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018953,
+      "target_copy_in_id": 1000018954
+    },
+    {
+      "tensor_id": 1000013343,
+      "size": 8192,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018980,
+      "target_copy_in_id": 1000018981
+    },
+    {
+      "tensor_id": 1000013355,
+      "size": 4096,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018983,
+      "target_copy_in_id": 1000018984
+    },
+    {
+      "tensor_id": 1000013367,
+      "size": 2048,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018986,
+      "target_copy_in_id": 1000018987
+    },
+    {
+      "tensor_id": 1000013374,
+      "size": 1024,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018989,
+      "target_copy_in_id": 1000018990
+    },
+    {
+      "tensor_id": 1000013376,
+      "size": 1024,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018992,
+      "target_copy_in_id": 1000018993
+    },
+    {
+      "tensor_id": 1000014099,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000019019,
+      "target_copy_in_id": 1000019020
+    },
+    {
+      "tensor_id": 1000014111,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000019022,
+      "target_copy_in_id": 1000019023
+    },
+    {
+      "tensor_id": 1000014123,
+      "size": 2048,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000019025,
+      "target_copy_in_id": 1000019026
+    },
+    {
+      "tensor_id": 1000014135,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000019028,
+      "target_copy_in_id": 1000019029
+    },
+    {
+      "tensor_id": 1000014157,
+      "size": 512,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000019031,
+      "target_copy_in_id": 1000019032
+    },
+    {
+      "tensor_id": 1000016493,
+      "size": 8192,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000019110,
+      "target_copy_in_id": 1000019111
+    },
+    {
+      "tensor_id": 1000016500,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000019113,
+      "target_copy_in_id": 1000019114
+    },
+    {
+      "tensor_id": 1000016502,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000019116,
+      "target_copy_in_id": 1000019117
+    },
+    {
+      "tensor_id": 1000017249,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000019143,
+      "target_copy_in_id": 1000019144
+    },
+    {
+      "tensor_id": 1000017261,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000019146,
+      "target_copy_in_id": 1000019147
+    },
+    {
+      "tensor_id": 1000017273,
+      "size": 2048,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000019149,
+      "target_copy_in_id": 1000019150
+    },
+    {
+      "tensor_id": 1000017280,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000019152,
+      "target_copy_in_id": 1000019153
+    },
+    {
+      "tensor_id": 1000017282,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000019155,
+      "target_copy_in_id": 1000019156
+    }
+  ],
+  "cross_core_transfers": [
+    {
+      "tensor_id": 1000000869,
+      "size": 8192,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018461,
+      "target_copy_in_id": 1000018462,
+      "transfer_id": 0,
+      "copy_out_end": 276290,
+      "copy_in_release": 276790,
+      "copy_in_start": 558185,
+      "copy_in_end": 558596
+    },
+    {
+      "tensor_id": 1000000876,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018464,
+      "target_copy_in_id": 1000018465,
+      "transfer_id": 1,
+      "copy_out_end": 276153,
+      "copy_in_release": 276653,
+      "copy_in_start": 529012,
+      "copy_in_end": 529315
+    },
+    {
+      "tensor_id": 1000000878,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018467,
+      "target_copy_in_id": 1000018468,
+      "transfer_id": 2,
+      "copy_out_end": 276084,
+      "copy_in_release": 276584,
+      "copy_in_start": 528567,
+      "copy_in_end": 528912
+    },
+    {
+      "tensor_id": 1000001625,
+      "size": 8192,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018494,
+      "target_copy_in_id": 1000018495,
+      "transfer_id": 3,
+      "copy_out_end": 576791,
+      "copy_in_release": 577291,
+      "copy_in_start": 813085,
+      "copy_in_end": 813222
+    },
+    {
+      "tensor_id": 1000001637,
+      "size": 4096,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018497,
+      "target_copy_in_id": 1000018498,
+      "transfer_id": 4,
+      "copy_out_end": 576517,
+      "copy_in_release": 577017,
+      "copy_in_start": 812366,
+      "copy_in_end": 812435
+    },
+    {
+      "tensor_id": 1000001649,
+      "size": 2048,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018500,
+      "target_copy_in_id": 1000018501,
+      "transfer_id": 5,
+      "copy_out_end": 576379,
+      "copy_in_release": 576879,
+      "copy_in_start": 812331,
+      "copy_in_end": 812366
+    },
+    {
+      "tensor_id": 1000001656,
+      "size": 1024,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018503,
+      "target_copy_in_id": 1000018504,
+      "transfer_id": 6,
+      "copy_out_end": 576309,
+      "copy_in_release": 576809,
+      "copy_in_start": 792644,
+      "copy_in_end": 792680
+    },
+    {
+      "tensor_id": 1000001658,
+      "size": 1024,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018506,
+      "target_copy_in_id": 1000018507,
+      "transfer_id": 7,
+      "copy_out_end": 576273,
+      "copy_in_release": 576773,
+      "copy_in_start": 792608,
+      "copy_in_end": 792644
+    },
+    {
+      "tensor_id": 1000002381,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000018533,
+      "target_copy_in_id": 1000018534,
+      "transfer_id": 8,
+      "copy_out_end": 847865,
+      "copy_in_release": 848365,
+      "copy_in_start": 1176154,
+      "copy_in_end": 1176291
+    },
+    {
+      "tensor_id": 1000002393,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000018536,
+      "target_copy_in_id": 1000018537,
+      "transfer_id": 9,
+      "copy_out_end": 847728,
+      "copy_in_release": 848228,
+      "copy_in_start": 1168890,
+      "copy_in_end": 1168977
+    },
+    {
+      "tensor_id": 1000002405,
+      "size": 2048,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000018539,
+      "target_copy_in_id": 1000018540,
+      "transfer_id": 10,
+      "copy_out_end": 847640,
+      "copy_in_release": 848140,
+      "copy_in_start": 1166739,
+      "copy_in_end": 1166774
+    },
+    {
+      "tensor_id": 1000002417,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000018542,
+      "target_copy_in_id": 1000018543,
+      "transfer_id": 11,
+      "copy_out_end": 847570,
+      "copy_in_release": 848070,
+      "copy_in_start": 1166652,
+      "copy_in_end": 1166670
+    },
+    {
+      "tensor_id": 1000002439,
+      "size": 512,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000018545,
+      "target_copy_in_id": 1000018546,
+      "transfer_id": 12,
+      "copy_out_end": 847534,
+      "copy_in_release": 848034,
+      "copy_in_start": 1166643,
+      "copy_in_end": 1166652
+    },
+    {
+      "tensor_id": 1000004775,
+      "size": 8192,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018624,
+      "target_copy_in_id": 1000018625,
+      "transfer_id": 13,
+      "copy_out_end": 329126,
+      "copy_in_release": 329626,
+      "copy_in_start": 558185,
+      "copy_in_end": 558596
+    },
+    {
+      "tensor_id": 1000004782,
+      "size": 4096,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018627,
+      "target_copy_in_id": 1000018628,
+      "transfer_id": 14,
+      "copy_out_end": 328715,
+      "copy_in_release": 329215,
+      "copy_in_start": 529012,
+      "copy_in_end": 529315
+    },
+    {
+      "tensor_id": 1000004784,
+      "size": 4096,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018630,
+      "target_copy_in_id": 1000018631,
+      "transfer_id": 15,
+      "copy_out_end": 328546,
+      "copy_in_release": 329046,
+      "copy_in_start": 528567,
+      "copy_in_end": 528912
+    },
+    {
+      "tensor_id": 1000005531,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018657,
+      "target_copy_in_id": 1000018658,
+      "transfer_id": 16,
+      "copy_out_end": 576791,
+      "copy_in_release": 577291,
+      "copy_in_start": 946516,
+      "copy_in_end": 946927
+    },
+    {
+      "tensor_id": 1000005543,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018660,
+      "target_copy_in_id": 1000018661,
+      "transfer_id": 17,
+      "copy_out_end": 576517,
+      "copy_in_release": 577017,
+      "copy_in_start": 945558,
+      "copy_in_end": 945627
+    },
+    {
+      "tensor_id": 1000005555,
+      "size": 2048,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018663,
+      "target_copy_in_id": 1000018664,
+      "transfer_id": 18,
+      "copy_out_end": 576379,
+      "copy_in_release": 576879,
+      "copy_in_start": 945197,
+      "copy_in_end": 945232
+    },
+    {
+      "tensor_id": 1000005562,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018666,
+      "target_copy_in_id": 1000018667,
+      "transfer_id": 19,
+      "copy_out_end": 576309,
+      "copy_in_release": 576809,
+      "copy_in_start": 930326,
+      "copy_in_end": 930362
+    },
+    {
+      "tensor_id": 1000005564,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018669,
+      "target_copy_in_id": 1000018670,
+      "transfer_id": 20,
+      "copy_out_end": 576273,
+      "copy_in_release": 576773,
+      "copy_in_start": 930256,
+      "copy_in_end": 930274
+    },
+    {
+      "tensor_id": 1000006287,
+      "size": 8192,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000018696,
+      "target_copy_in_id": 1000018697,
+      "transfer_id": 21,
+      "copy_out_end": 979874,
+      "copy_in_release": 980374,
+      "copy_in_start": 1316161,
+      "copy_in_end": 1316298
+    },
+    {
+      "tensor_id": 1000006299,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000018699,
+      "target_copy_in_id": 1000018700,
+      "transfer_id": 22,
+      "copy_out_end": 979737,
+      "copy_in_release": 980237,
+      "copy_in_start": 1310805,
+      "copy_in_end": 1310874
+    },
+    {
+      "tensor_id": 1000006311,
+      "size": 2048,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000018702,
+      "target_copy_in_id": 1000018703,
+      "transfer_id": 23,
+      "copy_out_end": 979668,
+      "copy_in_release": 980168,
+      "copy_in_start": 1308115,
+      "copy_in_end": 1308185
+    },
+    {
+      "tensor_id": 1000006323,
+      "size": 1024,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000018705,
+      "target_copy_in_id": 1000018706,
+      "transfer_id": 24,
+      "copy_out_end": 979633,
+      "copy_in_release": 980133,
+      "copy_in_start": 1306259,
+      "copy_in_end": 1306295
+    },
+    {
+      "tensor_id": 1000006345,
+      "size": 512,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000018708,
+      "target_copy_in_id": 1000018709,
+      "transfer_id": 25,
+      "copy_out_end": 979615,
+      "copy_in_release": 980115,
+      "copy_in_start": 1305633,
+      "copy_in_end": 1305651
+    },
+    {
+      "tensor_id": 1000007043,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018735,
+      "target_copy_in_id": 1000018736,
+      "transfer_id": 26,
+      "copy_out_end": 1320603,
+      "copy_in_release": 1321103,
+      "copy_in_start": 1673216,
+      "copy_in_end": 1673490
+    },
+    {
+      "tensor_id": 1000007132,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018738,
+      "target_copy_in_id": 1000018739,
+      "transfer_id": 27,
+      "copy_out_end": 1308394,
+      "copy_in_release": 1308894,
+      "copy_in_start": 1671702,
+      "copy_in_end": 1671771
+    },
+    {
+      "tensor_id": 1000008681,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018793,
+      "target_copy_in_id": 1000018794,
+      "transfer_id": 28,
+      "copy_out_end": 329126,
+      "copy_in_release": 329626,
+      "copy_in_start": 722356,
+      "copy_in_end": 722493
+    },
+    {
+      "tensor_id": 1000008688,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018796,
+      "target_copy_in_id": 1000018797,
+      "transfer_id": 29,
+      "copy_out_end": 328715,
+      "copy_in_release": 329215,
+      "copy_in_start": 703133,
+      "copy_in_end": 703242
+    },
+    {
+      "tensor_id": 1000008690,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000018799,
+      "target_copy_in_id": 1000018800,
+      "transfer_id": 30,
+      "copy_out_end": 328546,
+      "copy_in_release": 329046,
+      "copy_in_start": 702481,
+      "copy_in_end": 702550
+    },
+    {
+      "tensor_id": 1000009437,
+      "size": 8192,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018826,
+      "target_copy_in_id": 1000018827,
+      "transfer_id": 31,
+      "copy_out_end": 742935,
+      "copy_in_release": 743435,
+      "copy_in_start": 1069767,
+      "copy_in_end": 1070041
+    },
+    {
+      "tensor_id": 1000009449,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018829,
+      "target_copy_in_id": 1000018830,
+      "transfer_id": 32,
+      "copy_out_end": 742524,
+      "copy_in_release": 743024,
+      "copy_in_start": 1067101,
+      "copy_in_end": 1067239
+    },
+    {
+      "tensor_id": 1000009461,
+      "size": 2048,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018832,
+      "target_copy_in_id": 1000018833,
+      "transfer_id": 33,
+      "copy_out_end": 742317,
+      "copy_in_release": 742817,
+      "copy_in_start": 1066170,
+      "copy_in_end": 1066205
+    },
+    {
+      "tensor_id": 1000009468,
+      "size": 1024,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018835,
+      "target_copy_in_id": 1000018836,
+      "transfer_id": 34,
+      "copy_out_end": 742212,
+      "copy_in_release": 742712,
+      "copy_in_start": 1048401,
+      "copy_in_end": 1048437
+    },
+    {
+      "tensor_id": 1000009470,
+      "size": 1024,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018838,
+      "target_copy_in_id": 1000018839,
+      "transfer_id": 35,
+      "copy_out_end": 742158,
+      "copy_in_release": 742658,
+      "copy_in_start": 1048365,
+      "copy_in_end": 1048401
+    },
+    {
+      "tensor_id": 1000010949,
+      "size": 8192,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018889,
+      "target_copy_in_id": 1000018890,
+      "transfer_id": 36,
+      "copy_out_end": 1405313,
+      "copy_in_release": 1405813,
+      "copy_in_start": 1777106,
+      "copy_in_end": 1777380
+    },
+    {
+      "tensor_id": 1000011038,
+      "size": 4096,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018892,
+      "target_copy_in_id": 1000018893,
+      "transfer_id": 37,
+      "copy_out_end": 1404955,
+      "copy_in_release": 1405455,
+      "copy_in_start": 1776799,
+      "copy_in_end": 1776937
+    },
+    {
+      "tensor_id": 1000012587,
+      "size": 8192,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018947,
+      "target_copy_in_id": 1000018948,
+      "transfer_id": 38,
+      "copy_out_end": 506393,
+      "copy_in_release": 506893,
+      "copy_in_start": 826761,
+      "copy_in_end": 826906
+    },
+    {
+      "tensor_id": 1000012594,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018950,
+      "target_copy_in_id": 1000018951,
+      "transfer_id": 39,
+      "copy_out_end": 505982,
+      "copy_in_release": 506482,
+      "copy_in_start": 794231,
+      "copy_in_end": 794416
+    },
+    {
+      "tensor_id": 1000012596,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 1,
+      "source_copy_out_id": 1000018953,
+      "target_copy_in_id": 1000018954,
+      "transfer_id": 40,
+      "copy_out_end": 505775,
+      "copy_in_release": 506275,
+      "copy_in_start": 794024,
+      "copy_in_end": 794231
+    },
+    {
+      "tensor_id": 1000013343,
+      "size": 8192,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018980,
+      "target_copy_in_id": 1000018981,
+      "transfer_id": 41,
+      "copy_out_end": 841938,
+      "copy_in_release": 842438,
+      "copy_in_start": 1059710,
+      "copy_in_end": 1059847
+    },
+    {
+      "tensor_id": 1000013355,
+      "size": 4096,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018983,
+      "target_copy_in_id": 1000018984,
+      "transfer_id": 42,
+      "copy_out_end": 841664,
+      "copy_in_release": 842164,
+      "copy_in_start": 1057310,
+      "copy_in_end": 1057507
+    },
+    {
+      "tensor_id": 1000013367,
+      "size": 2048,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018986,
+      "target_copy_in_id": 1000018987,
+      "transfer_id": 43,
+      "copy_out_end": 841473,
+      "copy_in_release": 841973,
+      "copy_in_start": 1056372,
+      "copy_in_end": 1056442
+    },
+    {
+      "tensor_id": 1000013374,
+      "size": 1024,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018989,
+      "target_copy_in_id": 1000018990,
+      "transfer_id": 44,
+      "copy_out_end": 841403,
+      "copy_in_release": 841903,
+      "copy_in_start": 1038553,
+      "copy_in_end": 1038589
+    },
+    {
+      "tensor_id": 1000013376,
+      "size": 1024,
+      "source_core": 1,
+      "target_core": 2,
+      "source_copy_out_id": 1000018992,
+      "target_copy_in_id": 1000018993,
+      "transfer_id": 45,
+      "copy_out_end": 841367,
+      "copy_in_release": 841867,
+      "copy_in_start": 1037797,
+      "copy_in_end": 1037833
+    },
+    {
+      "tensor_id": 1000014099,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000019019,
+      "target_copy_in_id": 1000019020,
+      "transfer_id": 46,
+      "copy_out_end": 1089308,
+      "copy_in_release": 1089808,
+      "copy_in_start": 1429159,
+      "copy_in_end": 1429296
+    },
+    {
+      "tensor_id": 1000014111,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000019022,
+      "target_copy_in_id": 1000019023,
+      "transfer_id": 47,
+      "copy_out_end": 1089171,
+      "copy_in_release": 1089671,
+      "copy_in_start": 1423043,
+      "copy_in_end": 1423250
+    },
+    {
+      "tensor_id": 1000014123,
+      "size": 2048,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000019025,
+      "target_copy_in_id": 1000019026,
+      "transfer_id": 48,
+      "copy_out_end": 1088974,
+      "copy_in_release": 1089474,
+      "copy_in_start": 1419778,
+      "copy_in_end": 1419848
+    },
+    {
+      "tensor_id": 1000014135,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000019028,
+      "target_copy_in_id": 1000019029,
+      "transfer_id": 49,
+      "copy_out_end": 1088869,
+      "copy_in_release": 1089369,
+      "copy_in_start": 1419742,
+      "copy_in_end": 1419778
+    },
+    {
+      "tensor_id": 1000014157,
+      "size": 512,
+      "source_core": 2,
+      "target_core": 0,
+      "source_copy_out_id": 1000019031,
+      "target_copy_in_id": 1000019032,
+      "transfer_id": 50,
+      "copy_out_end": 1088815,
+      "copy_in_release": 1089315,
+      "copy_in_start": 1419724,
+      "copy_in_end": 1419742
+    },
+    {
+      "tensor_id": 1000016493,
+      "size": 8192,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000019110,
+      "target_copy_in_id": 1000019111,
+      "transfer_id": 51,
+      "copy_out_end": 1210650,
+      "copy_in_release": 1211150,
+      "copy_in_start": 1526518,
+      "copy_in_end": 1526783
+    },
+    {
+      "tensor_id": 1000016500,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000019113,
+      "target_copy_in_id": 1000019114,
+      "transfer_id": 52,
+      "copy_out_end": 1210513,
+      "copy_in_release": 1211013,
+      "copy_in_start": 1506840,
+      "copy_in_end": 1506957
+    },
+    {
+      "tensor_id": 1000016502,
+      "size": 4096,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000019116,
+      "target_copy_in_id": 1000019117,
+      "transfer_id": 53,
+      "copy_out_end": 1210444,
+      "copy_in_release": 1210944,
+      "copy_in_start": 1506662,
+      "copy_in_end": 1506800
+    },
+    {
+      "tensor_id": 1000017249,
+      "size": 8192,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000019143,
+      "target_copy_in_id": 1000019144,
+      "transfer_id": 54,
+      "copy_out_end": 1547149,
+      "copy_in_release": 1547649,
+      "copy_in_start": 1939635,
+      "copy_in_end": 1939772
+    },
+    {
+      "tensor_id": 1000017261,
+      "size": 4096,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000019146,
+      "target_copy_in_id": 1000019147,
+      "transfer_id": 55,
+      "copy_out_end": 1546893,
+      "copy_in_release": 1547393,
+      "copy_in_start": 1939481,
+      "copy_in_end": 1939550
+    },
+    {
+      "tensor_id": 1000017273,
+      "size": 2048,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000019149,
+      "target_copy_in_id": 1000019150,
+      "transfer_id": 56,
+      "copy_out_end": 1546755,
+      "copy_in_release": 1547255,
+      "copy_in_start": 1939120,
+      "copy_in_end": 1939155
+    },
+    {
+      "tensor_id": 1000017280,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000019152,
+      "target_copy_in_id": 1000019153,
+      "transfer_id": 57,
+      "copy_out_end": 1546685,
+      "copy_in_release": 1547185,
+      "copy_in_start": 1932357,
+      "copy_in_end": 1932375
+    },
+    {
+      "tensor_id": 1000017282,
+      "size": 1024,
+      "source_core": 2,
+      "target_core": 1,
+      "source_copy_out_id": 1000019155,
+      "target_copy_in_id": 1000019156,
+      "transfer_id": 58,
+      "copy_out_end": 1546649,
+      "copy_in_release": 1547149,
+      "copy_in_start": 1931260,
+      "copy_in_end": 1931278
+    }
+  ],
+  "per_core_timeline": [
+    {
+      "core_id": 0,
+      "tasks": [
+        {
+          "task_id": 0,
+          "subgraph_ids": [
+            0,
+            16,
+            12,
+            8,
+            21,
+            19,
+            10,
+            20
+          ],
+          "start": 0,
+          "end": 1899118,
+          "duration": 1899118
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 0,
+          "start": 0,
+          "end": 276290,
+          "duration": 276290
+        },
+        {
+          "subgraph_id": 16,
+          "start": 273785,
+          "end": 506393,
+          "duration": 232608
+        },
+        {
+          "subgraph_id": 12,
+          "start": 504948,
+          "end": 742935,
+          "duration": 237987
+        },
+        {
+          "subgraph_id": 8,
+          "start": 737272,
+          "end": 979874,
+          "duration": 242602
+        },
+        {
+          "subgraph_id": 21,
+          "start": 979004,
+          "end": 1210650,
+          "duration": 231646
+        },
+        {
+          "subgraph_id": 19,
+          "start": 1209755,
+          "end": 1435105,
+          "duration": 225350
+        },
+        {
+          "subgraph_id": 10,
+          "start": 1433439,
+          "end": 1678942,
+          "duration": 245503
+        },
+        {
+          "subgraph_id": 20,
+          "start": 1677140,
+          "end": 1899118,
+          "duration": 221978
+        }
+      ]
+    },
+    {
+      "core_id": 1,
+      "tasks": [
+        {
+          "task_id": 1,
+          "subgraph_ids": [
+            6,
+            1,
+            17,
+            13,
+            3,
+            14,
+            4,
+            5,
+            23
+          ],
+          "start": 0,
+          "end": 1950363,
+          "duration": 1950363
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 6,
+          "start": 0,
+          "end": 329126,
+          "duration": 329126
+        },
+        {
+          "subgraph_id": 1,
+          "start": 326178,
+          "end": 576791,
+          "duration": 250613
+        },
+        {
+          "subgraph_id": 17,
+          "start": 575613,
+          "end": 841938,
+          "duration": 266325
+        },
+        {
+          "subgraph_id": 13,
+          "start": 841331,
+          "end": 1075697,
+          "duration": 234366
+        },
+        {
+          "subgraph_id": 3,
+          "start": 1074111,
+          "end": 1180837,
+          "duration": 106726
+        },
+        {
+          "subgraph_id": 14,
+          "start": 1179732,
+          "end": 1405313,
+          "duration": 225581
+        },
+        {
+          "subgraph_id": 4,
+          "start": 1402420,
+          "end": 1513147,
+          "duration": 110727
+        },
+        {
+          "subgraph_id": 5,
+          "start": 1512893,
+          "end": 1757461,
+          "duration": 244568
+        },
+        {
+          "subgraph_id": 23,
+          "start": 1757187,
+          "end": 1950363,
+          "duration": 193176
+        }
+      ]
+    },
+    {
+      "core_id": 2,
+      "tasks": [
+        {
+          "task_id": 2,
+          "subgraph_ids": [
+            11,
+            7,
+            2,
+            18,
+            9,
+            22,
+            15
+          ],
+          "start": 0,
+          "end": 1794293,
+          "duration": 1794293
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 11,
+          "start": 0,
+          "end": 329126,
+          "duration": 329126
+        },
+        {
+          "subgraph_id": 7,
+          "start": 326178,
+          "end": 576791,
+          "duration": 250613
+        },
+        {
+          "subgraph_id": 2,
+          "start": 575613,
+          "end": 847865,
+          "duration": 272252
+        },
+        {
+          "subgraph_id": 18,
+          "start": 846322,
+          "end": 1089308,
+          "duration": 242986
+        },
+        {
+          "subgraph_id": 9,
+          "start": 1088768,
+          "end": 1320603,
+          "duration": 231835
+        },
+        {
+          "subgraph_id": 22,
+          "start": 1320042,
+          "end": 1547149,
+          "duration": 227107
+        },
+        {
+          "subgraph_id": 15,
+          "start": 1540704,
+          "end": 1794293,
+          "duration": 253589
+        }
+      ]
+    }
+  ],
+  "result_detail": "official metrics, task/subgraph intervals and cross-core transfers; --trace retains operations"
+}

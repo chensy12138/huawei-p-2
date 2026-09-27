@@ -1,0 +1,216 @@
+{
+  "scene": "B",
+  "makespan": 695569,
+  "num_cores": 3,
+  "bandwidth_bytes_per_cycle": 60,
+  "capacity_bytes": {
+    "L1": 524288,
+    "UB": 131072
+  },
+  "memory_peak_by_core": {
+    "0": {
+      "L1": 36864,
+      "UB": 37056
+    },
+    "1": {
+      "L1": 36864,
+      "UB": 37056
+    },
+    "2": {
+      "L1": 36864,
+      "UB": 55488
+    }
+  },
+  "step3_by_core": {
+    "0": {
+      "local_makespan": 694949,
+      "memory_dependency_count": 3866,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 618,
+        "PIPE_MTE3": 155,
+        "PIPE_M": 308,
+        "PIPE_V": 924
+      }
+    },
+    "1": {
+      "local_makespan": 695157,
+      "memory_dependency_count": 3862,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 616,
+        "PIPE_MTE3": 154,
+        "PIPE_M": 308,
+        "PIPE_V": 924
+      }
+    },
+    "2": {
+      "local_makespan": 693889,
+      "memory_dependency_count": 3865,
+      "pipe_op_counts": {
+        "PIPE_MTE2": 616,
+        "PIPE_MTE3": 155,
+        "PIPE_M": 308,
+        "PIPE_V": 924
+      }
+    }
+  },
+  "cross_core_copy_delay_cycles": 500,
+  "cross_task_traffic": 36864,
+  "data_movement_bytes": {
+    "original_graph_copy_bytes": 11355036,
+    "scheduled_copy_bytes": 11428764,
+    "added_copy_bytes": 73728,
+    "partition_added_copy_bytes": 73728,
+    "spill_added_copy_bytes": 0
+  },
+  "task_count": 3,
+  "task_dependencies": [
+    {
+      "tensor_id": 1000003659,
+      "size": 18432,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000010143,
+      "target_copy_in_id": 1000010144
+    },
+    {
+      "tensor_id": 1000003707,
+      "size": 18432,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000010176,
+      "target_copy_in_id": 1000010177
+    }
+  ],
+  "cross_core_transfers": [
+    {
+      "tensor_id": 1000003659,
+      "size": 18432,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000010143,
+      "target_copy_in_id": 1000010144,
+      "transfer_id": 0,
+      "copy_out_end": 175038,
+      "copy_in_release": 175538,
+      "copy_in_start": 513096,
+      "copy_in_end": 513404
+    },
+    {
+      "tensor_id": 1000003707,
+      "size": 18432,
+      "source_core": 0,
+      "target_core": 2,
+      "source_copy_out_id": 1000010176,
+      "target_copy_in_id": 1000010177,
+      "transfer_id": 1,
+      "copy_out_end": 347036,
+      "copy_in_release": 347536,
+      "copy_in_start": 685866,
+      "copy_in_end": 686174
+    }
+  ],
+  "per_core_timeline": [
+    {
+      "core_id": 0,
+      "tasks": [
+        {
+          "task_id": 0,
+          "subgraph_ids": [
+            0,
+            4,
+            6
+          ],
+          "start": 0,
+          "end": 693373,
+          "duration": 693373
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 0,
+          "start": 0,
+          "end": 175038,
+          "duration": 175038
+        },
+        {
+          "subgraph_id": 4,
+          "start": 165093,
+          "end": 347036,
+          "duration": 181943
+        },
+        {
+          "subgraph_id": 6,
+          "start": 337705,
+          "end": 693373,
+          "duration": 355668
+        }
+      ]
+    },
+    {
+      "core_id": 1,
+      "tasks": [
+        {
+          "task_id": 1,
+          "subgraph_ids": [
+            2,
+            7
+          ],
+          "start": 0,
+          "end": 695569,
+          "duration": 695569
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 2,
+          "start": 0,
+          "end": 348351,
+          "duration": 348351
+        },
+        {
+          "subgraph_id": 7,
+          "start": 336754,
+          "end": 695569,
+          "duration": 358815
+        }
+      ]
+    },
+    {
+      "core_id": 2,
+      "tasks": [
+        {
+          "task_id": 2,
+          "subgraph_ids": [
+            3,
+            1,
+            5
+          ],
+          "start": 0,
+          "end": 693685,
+          "duration": 693685
+        }
+      ],
+      "subgraphs": [
+        {
+          "subgraph_id": 3,
+          "start": 0,
+          "end": 348351,
+          "duration": 348351
+        },
+        {
+          "subgraph_id": 1,
+          "start": 336754,
+          "end": 520915,
+          "duration": 184161
+        },
+        {
+          "subgraph_id": 5,
+          "start": 513507,
+          "end": 693685,
+          "duration": 180178
+        }
+      ]
+    }
+  ],
+  "result_detail": "official metrics, task/subgraph intervals and cross-core transfers; --trace retains operations"
+}
